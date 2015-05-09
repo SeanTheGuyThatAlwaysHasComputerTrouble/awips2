@@ -30,12 +30,6 @@
          version="0.0.0"/>
 
    <plugin
-         id="javax.media.opengl"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
          id="org.apache.activemq"
          download-size="0"
          install-size="0"
@@ -164,6 +158,12 @@
 
    <plugin
          id="org.apache.commons.net"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.jogamp.jogl"
          download-size="0"
          install-size="0"
          version="0.0.0"/>

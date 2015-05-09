@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.raytheon.viz.feature.awips.developer"
-      label="AWIPS Developer Feature"
+      id="com.raytheon.viz.feature.awips.d2d"
+      label="AWIPS D2D Feature"
       version="1.9.0.qualifier"
       provider-name="Raytheon">
 
@@ -25,6 +25,12 @@
          id="com.raytheon.uf.viz.cots.feature"
          version="0.0.0"/>
 
+<!--
+   <includes
+         id="com.raytheon.viz.hydro.feature"
+         version="0.0.0"/>
+         -->
+         
    <includes
          id="com.raytheon.uf.viz.common.core.feature"
          version="0.0.0"/>
@@ -79,10 +85,6 @@
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.viz.gfe.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.displays.feature"
          version="0.0.0"/>
 
@@ -99,16 +101,13 @@
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.viz.hydro.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.d2d.xy.feature"
          version="0.0.0"/>
 
    <includes
          id="com.raytheon.uf.viz.ncep.displays.feature"
          version="0.0.0"/>
+        
 
    <includes
          id="com.raytheon.uf.viz.ncep.nsharp.feature"
@@ -121,10 +120,11 @@
    <includes
          id="com.raytheon.uf.viz.archive.feature"
          version="0.0.0"/>
-
+<!--
    <includes
          id="com.raytheon.uf.viz.ncep.perspective.feature"
          version="0.0.0"/>
+    --> 
 
    <includes
          id="com.raytheon.uf.viz.nwsauth.feature"
@@ -161,15 +161,11 @@
    <includes
          id="com.raytheon.viz.avnfps.feature"
          version="0.0.0"/>
-
+   <!--
    <includes
          id="com.raytheon.uf.viz.dat.feature"
          version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.d2d.gfe.feature"
-         version="0.0.0"/>
-
+	-->
    <includes
          id="com.raytheon.uf.viz.collaboration.feature"
          version="0.0.0"/>
