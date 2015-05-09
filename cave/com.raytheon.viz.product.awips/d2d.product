@@ -16,7 +16,6 @@
    <launcherArgs>
       <programArgs>-data @user.home/caveData -user @user.home/caveData -clean -consoleLog -alertviz</programArgs>
       <vmArgs>-Xmx1536M
--XstartOnFirstThread
 -XX:+UseG1GC
 -Dosgi.instance.area.readOnly=true
 -Declipse.log.enabled=false
@@ -54,11 +53,9 @@
       </win>
    </launcher>
 
-
    <vm>
       <windows include="true">jdk1.6.0</windows>
    </vm>
-
 
    <plugins>
    </plugins>
