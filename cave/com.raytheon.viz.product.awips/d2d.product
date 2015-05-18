@@ -62,7 +62,7 @@
 
    <features>
       <feature id="com.raytheon.viz.feature.awips" version="1.9.0.qualifier"/>
-      <feature id="com.raytheon.viz.feature.awips.d2d" version="1.9.0.qualifier"/>
+      <feature id="com.raytheon.viz.feature.awips.developer" version="1.9.0.qualifier"/>
    </features>
 
    <configurations>
