@@ -43,18 +43,21 @@ options=( 'status' 'start' 'stop' 'log' 'setup' 'test' )
 nopts=${options[@]}
 
 # main program
-#
 
 # Construct IP subnet
-#
 # OS X
 #IP=`ifconfig  | grep -E 'inet.[0-9]' | grep -v '127.0.0.1' | awk '{ print $2}'`
+
 # Linux
-IP=`/sbin/ifconfig | grep "inet addr" | grep -v 127.0.0 |  awk '{ print $2 }' | cut -d: -f2`
+# Simple solution
+#IP=`hostname -I`
+
+# better solution: find interface for routeable IPs
+usedev=`netstat -rn | egrep "^0.0.0.0" | awk '{print $8}'`
+IP=`/sbin/ifconfig $usedev | grep "inet addr" |  awk '{ print $2 }' | cut -d: -f2`
 
 # truncate
 IP_CIDR="${IP%.*}"
-
 editFiles=($PG_FILE $EDEX_ENV_FILE $LDMD_CONF)
 boolFiles=(true true true)
 editFuncs=(edit_pg edit_edex edit_ldm)
