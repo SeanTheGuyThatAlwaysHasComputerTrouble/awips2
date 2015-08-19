@@ -99,18 +99,19 @@
          id="com.raytheon.uf.edex.radar.feature"
          version="0.0.0"/>
 
-   <includes
+   <!--
+        <includes
          id="com.raytheon.uf.edex.dat.feature"
          version="0.0.0"/>
-
+   -->
    <includes
          id="com.raytheon.uf.edex.ncep.feature"
          version="0.0.0"/>
 
    <!-- Uncomment to deploy the National Central Operations EDEX plugins locally -->
-   <!-- includes
+   <includes
          id="com.raytheon.uf.edex.ncep.nco.feature"
-         version="0.0.0"/-->
+         version="0.0.0"/>
 
    <includes
          id="com.raytheon.uf.edex.binlightning.feature"
@@ -138,6 +139,10 @@
 
    <includes
          id="gov.nasa.msfc.sport.edex.sportlma.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="edu.wisc.ssec.cimss.edex.convectprob.feature"
          version="0.0.0"/>
 
 </feature>

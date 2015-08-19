@@ -121,7 +121,33 @@ function buildEDEX()
 
    return 0
 }
+function buildCAVEsingle()
+{
+   cd ${WORKSPACE}/rpms/awips2.cave/deploy.builder
+   if [ $? -ne 0 ]; then
+      echo "ERROR: Failed to build the cave rpms."
+      return 1
+   fi
 
+   # Determine the build architecture.
+   export CAVE_BUILD_ARCH=`uname -i`
+   if [ "${CAVE_BUILD_ARCH}" = "i386" ]; then
+      export CAVE_BUILD_ARCH="x86"
+   fi
+
+   if [ $? -ne 0 ]; then
+      echo "ERROR: Failed to determine the architecture."
+      return 1
+   fi
+   /bin/bash single.sh
+   if [ $? -ne 0 ]; then
+      echo "ERROR: Failed to build the cave rpms."
+      return 1
+   fi
+
+   return 0
+
+}
 function buildCAVE()
 {
    cd ${WORKSPACE}/rpms/awips2.cave/deploy.builder
@@ -203,7 +229,9 @@ function unpackHttpdPypies()
    # into the: ${AWIPSII_TOP_DIR}/SOURCES directory.
    awips2_core_directory=${WORKSPACE}/rpms/awips2.core
    httpd_pypies_directory=${awips2_core_directory}/Installer.httpd-pypies
+   echo httpd_pypies_directory=${httpd_pypies_directory}
    httpd_SOURCES=${httpd_pypies_directory}/src/httpd-2.2.15-SOURCES.tar
+   echo httpd_SOURCES=${httpd_SOURCES}
 
    /bin/tar -xvf ${httpd_SOURCES} -C ${AWIPSII_TOP_DIR}/SOURCES
    if [ $? -ne 0 ]; then
@@ -211,6 +239,32 @@ function unpackHttpdPypies()
    fi
    cp -vf ${httpd_pypies_directory}/SOURCES/* ${AWIPSII_TOP_DIR}/SOURCES
    if [ $? -ne 0 ]; then
+      return 1
+   fi
+
+   return 0
+}
+function buildShapefiles()
+{
+   cd ${WORKSPACE}/rpms/awips2.shapefiles/deploy.builder
+   if [ $? -ne 0 ]; then
+      echo "ERROR: Failed to build the edex shapefile rpm."
+      return 1
+   fi
+
+   # Determine the build architecture.
+   export EDEX_BUILD_ARCH=`uname -i`
+   if [ "${EDEX_BUILD_ARCH}" = "i386" ]; then
+      export EDEX_BUILD_ARCH="x86"
+   fi
+
+   if [ $? -ne 0 ]; then
+      echo "ERROR: Failed to determine the architecture."
+      return 1
+   fi
+   /bin/bash build.sh
+   if [ $? -ne 0 ]; then
+      echo "ERROR: Failed to build the edex shapefile rpm."
       return 1
    fi
 

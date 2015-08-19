@@ -47,6 +47,7 @@ import com.raytheon.uf.common.time.util.TimeUtil;
  * Jun 10, 2014 3226       bclement    fixed source
  * May 8, 2015  DR17252    MPorricelli Removed setting of source. 
  *                                     Source set in TextLightningParser.
+ * Jun 22, 2015            mjames@ucar Muted setSource
  * 
  * </pre>
  * 
