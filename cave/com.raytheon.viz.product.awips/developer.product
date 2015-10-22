@@ -39,7 +39,7 @@
       <vmArgsWin>-Dfile.encoding=UTF-8</vmArgsWin>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/com.raytheon.viz.ui.personalities.awips/awips2_tray16x16.png" i32="/com.raytheon.viz.ui.personalities.awips/awips2_tray32x32.png" i48="/com.raytheon.viz.ui.personalities.awips/awips2_tray48x48.png"/>
 
    <splash
       location="com.raytheon.viz.ui.personalities.awips"
@@ -52,6 +52,7 @@
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
       <windows include="true">jdk1.6.0</windows>
