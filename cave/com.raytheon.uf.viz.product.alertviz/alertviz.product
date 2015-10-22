@@ -18,7 +18,7 @@ Developed on the Raytheon Visualization Environment (viz)
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @user.home/caveData -user @user.home/caveData -clean</programArgs>
+      <programArgs>-data @user.home/Library/CAVE -user @user.home/Library/CAVE -clean</programArgs>
       <programArgsLin>-consoleLog</programArgsLin>
       <vmArgs>-Xincgc -Xms16M -Xmx256M -Xss2024k
 -Dosgi.instance.area.readOnly=true

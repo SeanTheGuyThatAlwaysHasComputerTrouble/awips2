@@ -78,6 +78,10 @@
          version="0.0.0"/>
 
    <includes
+         id="com.raytheon.viz.gfe.feature"
+         version="0.0.0"/>
+
+   <includes
          id="com.raytheon.uf.viz.displays.feature"
          version="0.0.0"/>
 
@@ -94,7 +98,31 @@
          version="0.0.0"/>
 
    <includes
+         id="com.raytheon.viz.hydro.feature"
+         version="0.0.0"/>
+
+   <includes
          id="com.raytheon.uf.viz.d2d.xy.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.raytheon.uf.viz.ncep.displays.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.raytheon.uf.viz.ncep.nsharp.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.raytheon.uf.viz.d2d.nsharp.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.raytheon.uf.viz.archive.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.raytheon.uf.viz.ncep.perspective.feature"
          version="0.0.0"/>
 
    <includes
@@ -132,6 +160,19 @@
    <includes
          id="com.raytheon.uf.viz.dat.feature"
          version="0.0.0"/>
+
+   <includes
+         id="com.raytheon.uf.viz.d2d.gfe.feature"
+         version="0.0.0"/>
+	<!--
+   <includes
+         id="com.raytheon.uf.viz.collaboration.feature"
+         version="0.0.0"/>
+		 
+	<includes
+         id="com.raytheon.uf.viz.useradmin.feature"
+         version="0.0.0"/>
+	-->
    <includes
          id="com.raytheon.uf.viz.gisdatastore.feature"
          version="0.0.0"/>
@@ -147,7 +188,7 @@
    <includes
          id="com.raytheon.uf.viz.aviation.advisory.feature"
          version="0.0.0"/>
-         
+
    <includes
          id="edu.wisc.ssec.cimss.viz.convectprob.feature"
          version="0.0.0"/>

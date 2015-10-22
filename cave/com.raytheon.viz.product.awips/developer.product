@@ -14,7 +14,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @user.home/caveData -user @user.home/caveData -clean -consoleLog -alertviz -component thinclient</programArgs>
+      <programArgs>-data @user.home/Library/CAVE -user @user.home/Library/CAVE -clean -consoleLog -alertviz</programArgs>
       <vmArgs>-Xmx1536M
 -XX:+UseG1GC
 -Dosgi.instance.area.readOnly=true
