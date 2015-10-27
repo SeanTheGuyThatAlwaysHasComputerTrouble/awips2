@@ -571,6 +571,21 @@
                </visibleWhen>
             </command>
          </toolbar>
+         <toolbar
+               id="products">
+            <command
+                  commandId="com.raytheon.uf.viz.productbrowser.productBrowser"
+                  id=""
+                  label="Product Browser"
+                  style="push"
+                  tooltip="Product Browser">
+               <visibleWhen>
+                  <reference
+                        definitionId="com.raytheon.uf.viz.d2d.ui.inD2DActionSet">
+                  </reference>
+               </visibleWhen>
+            </command>
+         </toolbar>
          </menuContribution>
          <menuContribution
                locationURI="menu:com.raytheon.uf.viz.d2d.ui.actions.loadmode">

@@ -54,10 +54,6 @@
                name="startupForegroundColor"
                value="000000">
          </property>
-         <property
-               name="windowImages"
-               value="platform:/plugin/com.raytheon.viz.ui.personalities.awips/awips2_tray16x16.png,platform:/plugin/com.raytheon.viz.ui.personalities.awips/awips2_tray32x32.png,platform:/plugin/com.raytheon.viz.ui.personalities.awips/awips2_tray48x48.png">
-         </property>
       </product>
    </extension>
 </plugin>

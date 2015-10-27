@@ -14,8 +14,8 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @user.home/Library/CAVE -user @user.home/Library/CAVE -clean -consoleLog -alertviz</programArgs>
-      <vmArgs>-Xmx1536M
+      <programArgs>-data @user.home/Library/CAVE -user @user.home/Library/CAVE -clean -consoleLog -alertviz -component thinclient</programArgs>
+      <vmArgs>-Xmx2536M
 -XX:+UseG1GC
 -Dosgi.instance.area.readOnly=true
 -Declipse.log.enabled=false
@@ -39,7 +39,7 @@
       <vmArgsWin>-Dfile.encoding=UTF-8</vmArgsWin>
    </launcherArgs>
 
-   <windowImages i16="/com.raytheon.viz.ui.personalities.awips/awips2_tray16x16.png" i32="/com.raytheon.viz.ui.personalities.awips/awips2_tray32x32.png" i48="/com.raytheon.viz.ui.personalities.awips/awips2_tray48x48.png"/>
+   <windowImages/>
 
    <splash
       location="com.raytheon.viz.ui.personalities.awips"
