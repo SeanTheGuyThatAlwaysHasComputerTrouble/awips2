@@ -102,14 +102,6 @@
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.uf.viz.archive.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.nwsauth.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.thinclient.feature"
          version="0.0.0"/>
 
@@ -139,10 +131,6 @@
 
    <includes
          id="com.raytheon.uf.viz.aviation.advisory.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="edu.wisc.ssec.cimss.viz.convectprob.feature"
          version="0.0.0"/>
 
    <requires>
