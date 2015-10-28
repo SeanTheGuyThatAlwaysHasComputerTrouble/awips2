@@ -211,27 +211,6 @@
              </separator>
              <command
                    commandId="com.raytheon.uf.viz.d2d.ui.actions.changeD2DLayout"
-                   label="1 Pane Layout">
-                <parameter
-                      name="sideViews"
-                      value="4">
-                </parameter>
-             </command>
-             <command
-                   commandId="com.raytheon.uf.viz.d2d.ui.actions.changeD2DLayout"
-                   label="5 Pane Layout">
-                <parameter
-                      name="sideViews"
-                      value="0">
-                </parameter>
-             </command>
-             <separator
-                   name="afterLayoutGroup"
-                   visible="true">
-             </separator>
-             <dynamic class="com.raytheon.viz.ui.actions.ToggleToolbarContributionItem" id="com.raytheon.uf.viz.d2d.ui.actions.ToggleToolbarContributionItem"/>
-             <command
-                   commandId="com.raytheon.uf.viz.d2d.ui.actions.changeD2DLayout"
                    label="Full Layout">
                 <parameter
                       name="sideViews"
@@ -575,8 +554,8 @@
                id="products">
             <command
                   commandId="com.raytheon.uf.viz.productbrowser.productBrowser"
-                  id=""
                   label="Product Browser"
+                  mode="FORCE_TEXT"
                   style="push"
                   tooltip="Product Browser">
                <visibleWhen>
