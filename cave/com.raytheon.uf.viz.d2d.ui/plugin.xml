@@ -211,30 +211,24 @@
              </separator>
              <command
                    commandId="com.raytheon.uf.viz.d2d.ui.actions.changeD2DLayout"
-                   label="Full Layout">
+                   label="1 Pane Layout">
                 <parameter
                       name="sideViews"
                       value="4">
                 </parameter>
-                <visibleWhen>
-                   <reference
-                         definitionId="com.raytheon.uf.viz.d2d.ui.inD2DActionSet">
-                   </reference>
-                </visibleWhen>
              </command>
              <command
                    commandId="com.raytheon.uf.viz.d2d.ui.actions.changeD2DLayout"
-                   label="Default Pane Layout">
+                   label="5 Pane Layout">
                 <parameter
                       name="sideViews"
                       value="0">
                 </parameter>
-                <visibleWhen>
-                   <reference
-                         definitionId="com.raytheon.uf.viz.d2d.ui.inD2DActionSet">
-                   </reference>
-                </visibleWhen>
              </command>
+             <separator
+                   name="afterLayoutGroup"
+                   visible="true">
+             </separator>
           </menu>
           <menu
                 id="options"
@@ -551,18 +545,43 @@
             </command>
          </toolbar>
          <toolbar
-               id="products">
+               id="NC-1">
             <command
-                  commandId="com.raytheon.uf.viz.productbrowser.productBrowser"
-                  label="Product Browser"
-                  mode="FORCE_TEXT"
+                  commandId="gov.noaa.nws.ncep.viz.actions.resourceManager"
+                  id="gov.noaa.nws.ncep.viz.actions.resourceManager"
+                  label="Ncdata"
                   style="push"
-                  tooltip="Product Browser">
+                  tooltip="NCP Data Manager">
                <visibleWhen>
                   <reference
                         definitionId="com.raytheon.uf.viz.d2d.ui.inD2DActionSet">
                   </reference>
                </visibleWhen>
+               <parameter
+                     name="mode"
+                     value="CREATE_RBD">
+               </parameter>
+            </command>
+            <command
+                  commandId="gov.noaa.nws.ncep.ui.nsharp.palette"
+                  icon="icons/nsharp.png"
+                  id="gov.noaa.nws.ncep.ui.nsharp.palette"
+                  label="Nsharp"
+                  mode="FORCE_TEXT"
+                  style="push"
+                  tooltip="Nsharp">
+               <visibleWhen>
+                  <reference
+                        definitionId="com.raytheon.uf.viz.d2d.ui.inD2DActionSet">
+                  </reference>
+               </visibleWhen>
+            </command>
+			<command
+                  commandId="com.raytheon.uf.viz.productbrowser.productBrowser"
+				  icon="icons/plus.png"
+                  label="Browser"
+				  mode="FORCE_TEXT"
+                  style="push">
             </command>
          </toolbar>
          </menuContribution>
