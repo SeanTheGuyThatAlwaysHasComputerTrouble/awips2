@@ -42,10 +42,6 @@
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.uf.viz.sounding.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.dataplugin.obs.feature"
          version="0.0.0"/>
 
@@ -72,13 +68,9 @@
    <includes
          id="gov.noaa.gsd.viz.ensemble.feature"
          version="0.0.0"/>
-         
-   <includes
-         id="com.raytheon.viz.grib.feature"
-         version="0.0.0"/>
 
    <includes
-         id="com.raytheon.viz.gfe.feature"
+         id="com.raytheon.viz.grib.feature"
          version="0.0.0"/>
 
    <includes
@@ -90,39 +82,11 @@
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.uf.viz.ncep.core.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.ncep.dataplugins.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.viz.hydro.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.d2d.xy.feature"
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.uf.viz.ncep.displays.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.ncep.nsharp.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.d2d.nsharp.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.archive.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.ncep.perspective.feature"
          version="0.0.0"/>
 
    <includes
@@ -143,14 +107,6 @@
 
    <includes
          id="com.raytheon.viz.volumebrowser.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.acarssounding.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.d2d.gfe.feature"
          version="0.0.0"/>
 
    <includes
@@ -175,10 +131,6 @@
 
    <includes
          id="edu.wisc.ssec.cimss.viz.convectprob.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.raytheon.uf.viz.ncep.npp.feature"
          version="0.0.0"/>
 
    <requires>
