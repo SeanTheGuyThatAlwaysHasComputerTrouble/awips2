@@ -72,7 +72,7 @@
    <includes
          id="gov.noaa.gsd.viz.ensemble.feature"
          version="0.0.0"/>
-         
+
    <includes
          id="com.raytheon.viz.grib.feature"
          version="0.0.0"/>
@@ -118,13 +118,9 @@
          version="0.0.0"/>
 
    <includes
-         id="com.raytheon.uf.viz.archive.feature"
-         version="0.0.0"/>
-
-   <includes
          id="com.raytheon.uf.viz.ncep.perspective.feature"
          version="0.0.0"/>
-         
+
    <includes
          id="com.raytheon.uf.viz.thinclient.feature"
          version="0.0.0"/>
@@ -152,6 +148,7 @@
    <includes
          id="com.raytheon.uf.viz.d2d.gfe.feature"
          version="0.0.0"/>
+
    <includes
          id="com.raytheon.uf.viz.gisdatastore.feature"
          version="0.0.0"/>
