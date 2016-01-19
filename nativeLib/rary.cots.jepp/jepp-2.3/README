@@ -41,7 +41,7 @@ Comments welcome.
 
     BUILDING ON MAC OS X
         You'll need to:
-            - set JAVA_HOME to /Library/Java/Home *not* /usr.
+            - set JAVA_HOME to /Library/Java/JavaVirtualMachines/jdk1.7.0<...>.jdk/Contents/Home
             - compile Python or download it using Fink.
             - have installed the developer kits from Apple
             - make a symlink from libjep.dynlib to /Library/Java/Extentions, like:
@@ -50,7 +50,7 @@ Comments welcome.
 
                 *** Make sure to use '.jnilib' for the symlink. ***
 
-              (This will get added to the install script Very Soon Now.)
+        Then run ./configure && make && make install.
 
 
     AUTOMAKE 1.6

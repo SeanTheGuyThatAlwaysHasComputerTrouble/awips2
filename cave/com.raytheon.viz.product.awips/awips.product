@@ -61,8 +61,8 @@
       </win>
    </launcher>
 
+
    <vm>
-      <linux include="true">jdk1.6.0</linux>
       <windows include="true">jdk1.6.0</windows>
    </vm>
 
