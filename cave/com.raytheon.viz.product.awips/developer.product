@@ -14,7 +14,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @user.home/Library/CAVE -user @user.home/Library/CAVE -clean -consoleLog -alertviz -component thinclient -vm ../../../jre/jre/lib/jli/libjli.dylib</programArgs>
+      <programArgs>-data @user.home/Library/CAVE -user @user.home/Library/CAVE -clean -consoleLog -component thinclient -alertviz -vm ../../../jre/jre/lib/jli/libjli.dylib</programArgs>
       <vmArgs>-Xmx2536M
 -XX:+UseG1GC
 -Dosgi.instance.area.readOnly=true
