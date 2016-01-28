@@ -116,10 +116,11 @@
    <includes
          id="com.raytheon.uf.viz.archive.feature"
          version="0.0.0"/>
-
+   <!--  
    <includes
          id="com.raytheon.uf.viz.ncep.perspective.feature"
          version="0.0.0"/>
+   -->
         
    <includes
          id="com.raytheon.uf.viz.thinclient.feature"
