@@ -21,4 +21,5 @@
 <requestPatterns xmlns:ns2="group">
     <regex>^IUSZ[0-9][123468].*</regex>
     <regex>^IUSY4[123468].*</regex>
+    <regex>.*upa.wmo.*</regex>
 </requestPatterns>

@@ -20,6 +20,7 @@
     -->
 <pointDataDescription>
   <!-- Observation position -->
+  <dimension name="maxLevels" length=180/>
   <dimension name="maxManLevels" length="25"/>
   <dimension name="maxMaxWinds" length="5"/>
   <dimension name="maxTropLevels" length="5"/>
@@ -29,7 +30,14 @@
   <parameter name="wmoStaNum" numDims="1" type="INT" />
   <parameter name="staName" numDims="1" type="STRING" size="10" />
   <parameter name="sfcPressure" numDims="1" type="FLOAT" unit="Pa" />
-
+  <!-- Data for all levels -->
+  <parameter name="numAll" numDims="1" type="INT" />
+  <parameter name="pr" numDims="2" type="FLOAT" unit="Pa" dimension="maxLevels" />
+  <parameter name="ht" numDims="2" type="FLOAT" unit="m" dimension="maxLevels" />
+  <parameter name="tp" numDims="2" type="FLOAT" unit="K" dimension="maxLevels" />
+  <parameter name="td" numDims="2" type="FLOAT" unit="K" dimension="maxLevels" />
+  <parameter name="wd" numDims="2" type="FLOAT" unit="degree" dimension="maxLevels" />
+  <parameter name="ws" numDims="2" type="FLOAT" unit="m/s" dimension="maxLevels" />
   <!-- Mandatory level data -->
   <parameter name="numMand" numDims="1" type="INT" />
   <parameter name="prMan" numDims="2" type="FLOAT" unit="Pa" dimension="maxManLevels" />

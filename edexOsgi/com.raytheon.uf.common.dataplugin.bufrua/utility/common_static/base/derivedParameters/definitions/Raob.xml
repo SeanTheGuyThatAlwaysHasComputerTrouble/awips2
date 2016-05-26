@@ -37,5 +37,12 @@
         <Field abbreviation="numSigW"/>
         <Field abbreviation="validTime"/>
         <Field abbreviation="wmoStaNum"/>
+        <Field abbreviation="numAll"/>
+        <Field abbreviation="pr" unit="hPa"/>
+        <Field abbreviation="tp"/>
+        <Field abbreviation="td"/>
+        <Field abbreviation="ht"/>
+        <Field abbreviation="wd"/>
+        <Field abbreviation="ws"/>
     </Method>
 </DerivedParameter>

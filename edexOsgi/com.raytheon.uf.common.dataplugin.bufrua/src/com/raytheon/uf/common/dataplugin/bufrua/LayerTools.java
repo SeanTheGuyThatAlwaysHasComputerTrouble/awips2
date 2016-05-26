@@ -45,6 +45,14 @@ public class LayerTools {
     public static final String WD_MAXW = "wdMaxW";
     public static final String WS_MAXW = "wsMaxW";
     
+    public static final String NUM_ALL = "numAll";
+    public static final String PR_ALL = "pr";
+    public static final String HT_ALL = "ht";
+    public static final String TP_ALL = "tp";
+    public static final String TD_ALL = "td";
+    public static final String WD_ALL = "wd";
+    public static final String WS_ALL = "ws";
+    
     public static final String NUM_MAND = "numMand";
     public static final String PR_MAN = "prMan";
     public static final String HT_MAN = "htMan";
@@ -64,6 +72,9 @@ public class LayerTools {
     public static final String PR_SIGT = "prSigT";
     public static final String TP_SIGT = "tpSigT";
     public static final String TD_SIGT = "tdSigT";
+    //public static final String HT_SIGT = "htSigT";
+    //public static final String WD_SIGT = "wdSigT";
+    //public static final String WS_SIGT = "wsSigT";
 
     public static final String NUM_SIGW = "numSigW";
     public static final String HT_SIGW = "htSigW";
@@ -73,6 +84,9 @@ public class LayerTools {
     
     public  static final String[] requiredParamMANLVL = new String[] {
         NUM_MAND, PR_MAN, HT_MAN, TP_MAN, TD_MAN, WD_MAN, WS_MAN, };
+    
+    public  static final String[] requiredParamALLLVL = new String[] {
+        NUM_ALL, PR_ALL, HT_ALL, TP_ALL, TD_ALL, WD_ALL, WS_ALL, };
 
     public static final String[] requiredParamSIGLVLT = new String[] {
         NUM_SIGT, PR_SIGT, TP_SIGT, TD_SIGT };
@@ -109,13 +123,13 @@ public class LayerTools {
     // All 7 Missing value
     // Bit No.
     // 0 - - - -
-    // 1 Significant level, wind
-    // 2 Significant level, temperature and/or relative humidity
-    // 3 Maximum wind level
-    // 4 Tropopause level
-    // 5 Standard level
-    // 6 Surface
-    // 7 
+    // 1 /   2 - Significant level, wind
+    // 2 /   4 - Significant level, temperature and/or relative humidity
+    // 3 /   8 - Maximum wind level
+    // 4 /  16 - Tropopause level
+    // 5 /  32 - Standard level
+    // 6 /  64 - Surface
+    // 7 / 128 - Generic(?)
     // All 7 Missing value
     public static final int SIGWND_LEVEL = 2;
     public static final int SIGPRE_LEVEL = 4;
