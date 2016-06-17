@@ -388,6 +388,7 @@ function deleteOldCaveLogs()
 # Delete old Eclipse configuration directories that are no longer in use
 function deleteOldEclipseConfigurationDirs()
 {
+    export $USER=`whoami`
     local tmp_dir=$1
     local tmp_dir_pat=$(echo "$tmp_dir" | sed -e 's/|/\\|/g')
     save_IFS=$IFS
