@@ -4,7 +4,7 @@
 Name: awips2-edex
 Summary: AWIPS II Edex
 Version: %{_component_version}
-Release: %{_component_release}
+Release: %{_component_release}%{?dist}
 Group: AWIPSII
 BuildRoot: %{_build_root}
 URL: N/A
@@ -20,6 +20,11 @@ requires: awips2-python
 requires: awips2-java
 requires: awips2-psql
 requires: awips2-yajsw
+
+%{?filter_setup:
+%filter_from_requires /guava/d; /raytheon/d
+%filter_setup
+}
 
 %description
 AWIPS II Edex Installation - Installs and configures AWIPS II Edex.

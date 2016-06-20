@@ -16,7 +16,7 @@
 Name: %{_component_name}
 Summary: AWIPS II Notification
 Version: %{_component_version}
-Release: %{_component_release}
+Release: %{_component_release}%{?dist}
 Group: AWIPSII
 BuildRoot: /tmp
 BuildArch: %{_build_arch}
@@ -28,6 +28,7 @@ Vendor: Raytheon
 Packager: Bryan Kowal
 
 AutoReq: no
+BuildRequires: awips2-qpid-lib, libcurl-devel
 requires: boost >= 1.33.1
 requires: awips2-qpid-lib
 provides: awips2-notification

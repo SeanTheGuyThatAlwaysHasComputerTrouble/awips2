@@ -124,16 +124,16 @@ if [ "${1}" = "-jep" ]; then
 fi
 if [ "${1}" = "-pydev" ]; then
    #buildRPM "awips2-python"
-   buildRPM "awips2-python-scientific"
+   #buildRPM "awips2-python-scientific"
    #buildRPM "awips2-python-awips"
    #buildRPM "awips2-python-jep"
    #buildRPM "awips2-python-gfe"
+   #exit 0
    #buildRPM "awips2-python-numpy"
    #buildRPM "awips2-python-pyparsing"
    #buildRPM "awips2-python-six"
    #buildRPM "awips2-python-nose"
    #buildRPM "awips2-python-h5py"
-   #buildRPM "awips2-pypies"
 
    #buildRPM "awips2-python-cycler"
    #buildRPM "awips2-python-shapely"
@@ -145,41 +145,22 @@ if [ "${1}" = "-pydev" ]; then
    #buildRPM "awips2-python-matplotlib"
    #buildRPM "awips2-python-basemap"
 
-   # DONE
    #buildRPM "awips2-python-pint"
    #buildRPM "awips2-python-dateutil"
    exit 0
-
 fi
 
 if [ "${1}" = "-python" ]; then
-   buildRPM "awips2-python-pint"
-   
-   buildRPM "awips2-python"
-   buildRPM "awips2-python-h5py"
    buildRPM "awips2-python-qpid"
-
-   buildRPM "awips2-python-awips"
-   buildRPM "awips2-python-cherrypy"
-   buildRPM "awips2-python-jimporter"
-   buildRPM "awips2-python-matplotlib"
-   buildRPM "awips2-python-nose"
-   buildRPM "awips2-python-numpy"
-   buildRPM "awips2-python-pil"
-   buildRPM "awips2-python-pmw"
-   buildRPM "awips2-python-pupynere"
-   buildRPM "awips2-python-qpid"
-   buildRPM "awips2-python-scientific"
-   buildRPM "awips2-python-scipy"
-   buildRPM "awips2-python-tables"
-   buildRPM "awips2-python-thrift"
-   buildRPM "awips2-python-tpg"
-   buildRPM "awips2-python-werkzeug"
-   buildRPM "awips2-python-pygtk"
-   buildRPM "awips2-python-pycairo"
-   buildRPM "awips2-python-shapely"
-   buildRPM "awips2-notification"
-
+   #buildRPM "awips2-python-cherrypy"
+   #buildRPM "awips2-python-pil"
+   #buildRPM "awips2-python-pmw"
+   #buildRPM "awips2-python-pupynere"
+   #buildRPM "awips2-python-tables"
+   #buildRPM "awips2-python-tpg"
+   #buildRPM "awips2-python-werkzeug"
+   #buildRPM "awips2-python-pygtk"
+   #buildRPM "awips2-python-pycairo"
    exit 0
 fi
 
@@ -283,7 +264,7 @@ if [ "${1}" = "-rh6" ]; then
    buildRPM "awips2-gfesuite-client"
    buildRPM "awips2-gfesuite-server"
    buildRPM "awips2-groovy"
-   buildRPM "awips2-localapps-environment"
+   ##buildRPM "awips2-localapps-environment"
    buildLocalizationRPMs
    if [ $? -ne 0 ]; then
       exit 1
@@ -311,15 +292,17 @@ if [ "${1}" = "-postgres" ]; then
 fi
 if [ "${1}" = "-maps" ]; then
    buildRPM "awips2-maps-database"
+   buildRPM "awips2-ncep-database"
    exit 0
 fi
 
 if [ "${1}" = "-database" ]; then
    #buildRPM "awips2-pypies"
-   buildRPM "awips2-database"
-   buildRPM "awips2-database-standalone-configuration"
-   buildRPM "awips2-maps-database"
-   buildRPM "awips2-ncep-database"
+   #buildRPM "awips2-database"
+   buildRPM "awips2-yajsw"
+   #buildRPM "awips2-database-standalone-configuration"
+   #buildRPM "awips2-maps-database"
+   #buildRPM "awips2-ncep-database"
 
    exit 0
 fi
@@ -347,7 +330,7 @@ if [ "${1}" = "-delta" ]; then
    buildRPM "awips2-database-standalone-configuration"
    buildRPM "awips2-gfesuite-client"
    buildRPM "awips2-gfesuite-server"
-   buildRPM "awips2-localapps-environment"
+   ##buildRPM "awips2-localapps-environment"
    buildRPM "awips2-maps-database"
    buildRPM "awips2-notification"
    buildRPM "awips2-pypies"
@@ -421,7 +404,6 @@ if [ "${1}" = "-full" ]; then
    buildRPM "awips2-cli"
 #   buildRPM "awips2-gfesuite-client"
 #   buildRPM "awips2-gfesuite-server"
-   buildRPM "awips2-localapps-environment"
 #
 # awips2-data.hdf5 and awips2-data.gfe require shapefiles in a 
 # directory 'awipscm' which is not provided in the source or ADE, 
@@ -455,14 +437,6 @@ if [ "${1}" = "-full" ]; then
    buildRPM "awips2-ldm"
    exit 0
 fi
-
-#if [ "${1}" = "-ade" ]; then
-#   echo "INFO: AWIPS II currently does not support a 64-bit version of the ADE."
-#   exit 0
-#   buildRPM "awips2-eclipse"
-#
-#   exit 0
-#fi
 
 if [ "${1}" = "-ade" ]; then
    buildRPM "awips2-eclipse"
@@ -543,103 +517,68 @@ if [ "${1}" = "-ade" ]; then
    exit 0
 fi
 
-if [ "${1}" = "-cave" ]; then
-   buildCAVE
-fi
-if [ "${1}" = "-hydro" ]; then
-   buildRPM "awips2-hydroapps-shared"
-fi
-
-if [ "${1}" = "-version" ]; then
-   buildRPM "awips2"
-fi
-
-if [ "${1}" = "-other" ]; then
-   buildRPM "awips2"
-   buildRPM "awips2-cli"
-   buildRPM "awips2-gfesuite-client"
-   buildRPM "awips2-gfesuite-server"
-   buildRPM "awips2-yajsw"
-   buildRPM "awips2-tools"
-   buildRPM "awips2-pypies"
-   buildRPM "awips2-adapt-native"
-   buildRPM "awips2-aviation-shared"
-   buildRPM "awips2-edex-environment"
-   buildRPM "awips2-data.gfe"
-   #buildRPM "awips2-data.hdf5-topo"
-   #buildRPM "awips2-alertviz"
-   #buildRPM "awips2-notification"
-   buildRPM "awips2-groovy"
-fi
-
-if [ "${1}" = "-viz" ]; then
-   buildRPM "awips2-common-base"
-   buildCAVE
-   if [ $? -ne 0 ]; then
-      exit 1
-   fi
-   #buildRPM "awips2-alertviz"
-   #buildRPM "awips2-notification"
-   exit 0
-fi
-
-if [ "${1}" = "-shp" ]; then
-   buildShapefiles
-   exit 0
-fi
-
-if [ "${1}" = "-edex" ]; then
-   buildRPM "awips2"
-   buildRPM "awips2-common-base"
-   buildEDEX
-   #buildRPM "awips2-data.hdf5-topo"
+if [ "${1}" = "-centos7" ]; then
+   #unpackHttpdPypies
    #if [ $? -ne 0 ]; then
    #   exit 1
    #fi
-   #buildRPM "awips2-python-awips"
-
-   exit 0
-fi
-
-if [ "${1}" = "-custom" ]; then
+   #buildRPM "awips2-httpd-pypies"
+   #buildRPM "awips2-postgres"
+   #buildRPM "awips2-psql"
+   #buildRPM "awips2-database"
+   #buildRPM "awips2-database-standalone-configuration"
+   #buildRPM "awips2-maps-database"
+   #buildRPM "awips2-ncep-database"
+   #buildRPM "awips2"
+   #buildRPM "awips2-cli"
+   #buildRPM "awips2-gfesuite-client"
+   #buildRPM "awips2-gfesuite-server"
+   #buildRPM "awips2-yajsw"
+   #buildRPM "awips2-tools"
+   #buildRPM "awips2-pypies"
+   #buildRPM "awips2-adapt-native"
+   #buildRPM "awips2-aviation-shared"
+   #buildRPM "awips2-edex-environment"
+   buildRPM "awips2-data.gfe"
+   buildRPM "awips2-data.hdf5-topo"
+   #buildRPM "awips2-groovy"
+   #buildShapefiles
+   #buildRPM "awips2-edex-upc"
+   #buildRPM "awips2-ldm"
+   buildLocalizationRPMs
+   #buildRPM "awips2-python-qpid"
    #buildQPID
    #if [ $? -ne 0 ]; then
    #   exit 1
    #fi
-   #buildRPM "awips2-adapt-native"
    #buildRPM "awips2-hydroapps-shared"
-   #buildRPM "awips2-common-base"
-   #buildRPM "awips2-gfesuite-client"
-   #buildRPM "awips2-gfesuite-server"
-   #buildRPM "awips2-python-awips"
-   #buildRPM "awips2-alertviz"
-   #buildRPM "awips2-python"
-   #buildRPM "awips2-alertviz"
-   #buildRPM "awips2-ant"
-   #buildRPM "awips2-eclipse"
-   #buildRPM "awips2-python"
-
-   exit 0
+   #buildRPM "awips2-cli"
 fi
 
-if [ "${1}" = "-qpid" ]; then
-   buildRPM "awips2-python-qpid"
-   buildQPID
-   if [ $? -ne 0 ]; then
-      exit 1
-   fi
-   exit 0
+if [ "${1}" = "-hydro" ]; then
+   buildRPM "awips2-hydroapps-shared"
 fi
 
 if [ "${1}" = "-ldm" ]; then
    buildRPM "awips2-ldm"
-
-   exit 0
+fi
+if [ "${1}" = "-viz" ]; then
+   #buildRPM "awips2-common-base"
+   #buildCAVE
+   #if [ $? -ne 0 ]; then
+   #   exit 1
+   #fi
+   #buildRPM "awips2-alertviz"
+   buildRPM "awips2-notification"
 fi
 
-if [ "${1}" = "-upc" ]; then
-   buildRPM "awips2-edex-upc"
-
+if [ "${1}" = "-edex" ]; then
+   #buildRPM "awips2"
+   #buildRPM "awips2-common-base"
+   buildEDEX
+   if [ $? -ne 0 ]; then
+      exit 1
+   fi
    exit 0
 fi
 

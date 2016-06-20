@@ -8,7 +8,7 @@
 Name: %{_component_name}
 Summary: AWIPS II Database Installation
 Version: %{_component_version}
-Release: %{_component_release}
+Release: %{_component_release}%{?dist}
 Group: AWIPSII
 BuildRoot: /tmp
 BuildArch: noarch
@@ -26,7 +26,7 @@ requires: libpng
 requires: awips2-postgresql
 requires: awips2-psql
 requires: awips2-database-configuration
-requires: netcdf
+#BuildRequires: netcdf
 
 %description
 AWIPS II Database Installation - Sets Up The Basic AWIPS II Database, Creating The

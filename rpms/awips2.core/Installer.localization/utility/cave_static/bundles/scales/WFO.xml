@@ -115,7 +115,7 @@
                 </resource>
                 <timeMatcher xsi:type="d2DTimeMatcher" loadMode="VALID_TIME_SEQ" deltaFilter="0" forecastFilter="0"/>
                 <numberOfFrames>12</numberOfFrames>
-		<gridGeometry rangeX="0 23285" rangeY="0 9999" envelopeMinX="-458169.5883173381" envelopeMaxX="564860.5074092833" envelopeMinY="4225559.091044741" envelopeMaxY="4614755.323114651">
+		<gridGeometry rangeX="0 23285" rangeY="0 9999" envelopeMinX="-458169.5883173381" envelopeMaxX="564860.5074092833" envelopeMinY="5225559" envelopeMaxY="5614755">
                     <CRS>PROJCS[&quot;Equidistant_Cylindrical&quot;,
   GEOGCS[&quot;WGS84(DD)&quot;,
     DATUM[&quot;WGS84&quot;,

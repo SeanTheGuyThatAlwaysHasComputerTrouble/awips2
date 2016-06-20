@@ -4,7 +4,7 @@
 Name: awips2-data.hdf5-topo
 Summary: AWIPS II Topo Distribution
 Version: %{_component_version}
-Release: %{_component_release}
+Release: %{_component_release}%{?dist}
 Group: AWIPSII
 BuildRoot: /tmp
 BuildArch: noarch
@@ -70,9 +70,6 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(664,awips,fxalpha,775)
-%dir /awips2
-%dir /awips2/edex
-%dir /awips2/edex/data
 %dir /awips2/edex/data/hdf5
 %dir /awips2/edex/data/hdf5/topo
 /awips2/edex/data/hdf5/topo/*

@@ -9,7 +9,7 @@
 Name: awips2-edex-datadelivery
 Summary: awips2-edex-datadelivery Installation
 Version: %{_component_version}
-Release: %{_component_release}
+Release: %{_component_release}%{?dist}
 Group: AWIPSII
 BuildRoot: %{_build_root}
 URL: N/A
