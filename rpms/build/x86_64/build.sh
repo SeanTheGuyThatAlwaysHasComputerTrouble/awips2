@@ -559,6 +559,9 @@ if [ "${1}" = "-hydro" ]; then
    buildRPM "awips2-hydroapps-shared"
 fi
 
+if [ "${1}" = "-upc" ]; then
+   buildRPM "awips2-edex-upc"
+fi
 if [ "${1}" = "-ldm" ]; then
    buildRPM "awips2-ldm"
 fi
